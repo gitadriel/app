@@ -1,4 +1,3 @@
-
 <html lang="pt-br">
 <head>
 	<title>Menu</title>
@@ -8,8 +7,14 @@
 
 <body onload="horas()"></body>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<table style="width:100%"  >
+
+
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/ard.js"></script>
+
+<table style="width:100%" >
 <tr>
+
 	
 	<td style="width:17%"  ><button class="btnmenu" onclick="return trocar(telainicial,submenusala,submenuquarto,conteudolampada,conteudoar);" ><img src="image/home.png"></button></td>
 
@@ -36,7 +41,7 @@
 		    <td style="width:100%" rowspan="5" >
 
 		    	<!--conteudos-->
-		    	<form id="conteudolampada" style="display:none">
+		    	<div id="conteudolampada" style="display:none">
 
 			    	<label >Lâmpada 1</label>
 				    	<button type="button" class="btnON"id="LigarLed" onClick="AcenderApagar(this.id)" >ON</button>
@@ -51,32 +56,41 @@
 
 	        		</div>	
 
-	       		</form>
+	        			<a  target = "_blank"  data-rel = "external"  href = "http://192.168.0.113/testeapp/www/index.html"> www.kidzout.com </a>
+
+	       		</div>
 
 
 
-	       		<form id="conteudoar" style="display:none">
-	       			<button class="on" type="button" id="LigarAr" onClick="LigarAr(this.id)"><img src="image/on.png"></button>
+	       		<div id="conteudoar" style="display:none">
+	       			<button class="fan" type="button" id="velocidade" onClick="EnviarDados(this.id)"><img src="image/fan.png"></button><br><br><br><br>
+	       			<button class="fan1" type="button" id="potencia" onClick="EnviarDados(this.id)"><img src="image/fan1.png"></button>
+	       			<button class="on" type="button" id="OnOffAr" onClick="EnviarDados(this.id)"><img src="image/on.png"></button>
+	       			<button class="maxfrio" type="button" id="swimming" onClick="EnviarDados(this.id)"><img src="image/maxfrio.png"></button>
+	       			<button class="up" type="button" id="MaisAr" onClick="EnviarDados(this.id)"><img src="image/up.png"></button>
+	       			<button class="down" type="button" id="MenosAr" onClick="EnviarDados(this.id)"><img src="image/down.png"></button><br>
+	       			
+	
+
+
+	       		</div>
 
 
 
-	       		</form>
 
 
 
-
-
-
-	       		<form id="telainicial" style="display:block">
+	       		<div id="telainicial" style="display:block">
 	       		<script type="text/javascript">function horas(){camada = document.getElementById('relogio');hoje = new Date();hora = hoje.getHours();if(hora<=9){hora = "0" + hora;}minuto = hoje.getMinutes();if(minuto<=9){minuto = "0" + minuto;}segundo = hoje.getSeconds();if(segundo<=9){segundo = "0" + segundo;}camada.innerHTML = hora + ":" + minuto + ":" + segundo;setTimeout("horas()",1000);}</script>
 
 	       		<div id="relogio" ></div>
 	       			
 	       		<label id="temperatura">Temperatura: </label><span id="graus">25°</span>
 	       		<label id="dia">Dia 31-03-2016</label>
-	       		<label id="hora">Horas</label>
+	       		<label id="hora">Horas</label><br/>
+	       	
 
-	       		</form>
+	       		</div>
 		    </td>
 </tr>
   <tr>
@@ -112,62 +126,6 @@
 </table>
 
 
-<script type="text/javascript">
-	
-	function trocar(obj,obj2,obj3,obj4,obj5){
-				if(obj.style.display == "none"){
-					obj.style.display = "block";
-				}else{
-					obj.style.display = "none";
-				}
 
-				if(obj2.style.display == "block"){
-					obj2.style.display = "none";
-				
-				}
-				if(obj3.style.display == "block"){
-					obj3.style.display = "none";
-				
-				}
-
-				if(obj4.style.display == "block"){
-					obj4.style.display = "none";
-				
-				}
-				if(obj5.style.display == "block"){
-					obj5.style.display = "none";
-				
-				}
-				
-			}
-
-			function trocarTEMP(obj,obj2,obj3,obj4,obj5){
-				if(obj.style.display == "block"){
-					obj.style.display = "none";
-				
-				}
-				if(obj2.style.display == "block"){
-					obj2.style.display = "none";
-				
-				}
-				if(obj3.style.display == "block"){
-					obj3.style.display = "none";
-				
-				}
-				if(obj4.style.display == "block"){
-					obj4.style.display = "none";
-				
-				}
-				if(obj5.style.display == "block"){
-					obj5.style.display = "none";
-				
-				}
-				
-			}
-
-
-
-
-</script>
 </body>
 </html>
