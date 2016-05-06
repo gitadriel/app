@@ -102,6 +102,13 @@ position: absolute;
     text-align: center;
 }
 
+button:active{
+
+    border-color: rgba(218, 163, 55, 0.57);
+
+
+}
+
 
 #DesligarLed1 {
   position: absolute;
@@ -135,22 +142,7 @@ background: #f7607c;
 
 }
 
-.hr{
-      padding: 62;
-    color: #D81010;
-    background: rgba(253, 253, 253, 0.18);
-    width: 56%;
-    float: left;
-    position: absolute;
-    top: 55;
-    left: 30%;
-}
 
-#hr1--{
-
-top: 186;
-
-}
 
 
 
@@ -211,6 +203,17 @@ img	{
 
 }
 
+
+.on:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
 body{
 
 	background-image: url("image/fundo.jpg");
@@ -226,7 +229,9 @@ body{
 
 .on{
       position: absolute;
-      top: 6%;
+    top: 24%;
+    left: 76%;
+
    
       
       border-left: 0;
@@ -235,7 +240,180 @@ body{
       border-width: 0;
          background-color: rgba(255, 255, 255, 0);
       outline: none;
-          width: 33%;
+          width: 25%;
+             
    
 }
+.on:active{
 
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+
+.down{
+          position: absolute;
+    top: 24%;
+    left: 52%;
+
+   
+      
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-width: 0;
+         background-color: rgba(255, 255, 255, 0);
+      outline: none;
+          width: 25%;
+   
+}
+.down:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+.up{
+          position: absolute;
+    		    top: 8%;
+    		    left: 52%;
+   
+      
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-width: 0;
+         background-color: rgba(255, 255, 255, 0);
+      outline: none;
+          width: 25%;
+   
+}
+.up:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+
+.fan{
+          position: absolute;
+    top: 24%;
+    left: 29%;
+   
+      
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-width: 0;
+         background-color: rgba(255, 255, 255, 0);
+      outline: none;
+          width: 25%;
+   
+}
+.fan:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+
+
+.fan1{
+      position: absolute;
+        top: 8%;
+        left: 29%;
+   
+      
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-width: 0;
+         background-color: rgba(255, 255, 255, 0);
+      outline: none;
+          width: 25%;
+   
+}
+.fan1:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+
+.maxfrio{
+         position: absolute;
+        top: 8%;
+    left: 76%;
+   
+      
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      border-width: 0;
+         background-color: rgba(255, 255, 255, 0);
+      outline: none;
+          width: 25%;
+   
+}
+.maxfrio:active{
+
+
+	-webkit-filter: invert(100%);
+   -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+     -o-filter: invert(100%);
+filter: invert(100%);
+}
+
+
+
+
+hr{
+
+
+	    background: rgba(29, 130, 235, 0.48);
+    padding: 1px;
+    border-width: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+    width: 61%;
+    position: absolute;
+    left: 109px;
+}
+
+
+
+button:focus{
+    outline: none;
+}
